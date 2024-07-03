@@ -9,8 +9,8 @@ module.exports = ({ env }) => ({
       secret: env('ADMIN_JWT_SECRET'),
     },
   },
-  ssl: {
-    key: fs.readFileSync(path.join(__dirname, 'ssl/server.key')),
-    cert: fs.readFileSync(path.join(__dirname, 'ssl/server.cert')),
-  },
+  // ssl: {
+  //   key: fs.readFileSync(path.join(__dirname, 'ssl/server.key')),
+  //   cert: fs.readFileSync(path.join(__dirname, 'ssl/server.cert')),
+  // },
 });
